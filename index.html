@@ -1,0 +1,281 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body onload="final()">
+    <div>
+        <h2 class="section">What do the Top Nba players look like?</h2>
+
+        <p>
+            The world of basketball is filled with extraordinary talent, and fans often wonder what sets the top NBA players apart
+            from the rest. In this article, we delve into the characteristics and attributes of these elite athletes. By analyzing
+            statistical metrics, such as total points scored and three-point shooting accuracy, we gain insights into the factors
+            that contribute to their success. Additionally, we explore whether the best teams prioritize offense or defense and
+            examine the age at which players reach their prime. Furthermore, we investigate the geographical distribution of top
+            players and utilize a force graph to uncover similarities among players in different positions. Join us as we find
+            the traits that define the top NBA players and gain a deeper understanding of what it takes to stand among the
+            basketball elite.
+        </p>
+
+        <br>
+
+        <h1 class="section">Who are the top players statistically?</h1>
+
+        <h2 class="section">Are Total Points Scored the best metric?</h2>
+
+        <div class="container">
+            <div class="plot">
+                <div id="p1"></div>
+                <div id="p1_plot" class="center_plot"></div>
+                <div class="text">
+                    <p>The general trend observed in the scatter plot, where an increase in total points is associated with an increase in win
+                    shares, suggests a positive correlation between scoring more points and contributing more to team success (as measured
+                    by win shares). This correlation implies that players who score more points tend to have a higher impact on their team's
+                    performance and are often more valuable players.
+                    
+                    However, it's important to be cautious about generalizing this correlation to conclude that scoring more points
+                    automatically makes a player better. Here are a few reasons why:</p>
+
+                <ol>
+                    <li class="infographic">
+                        <strong>Contextual Factors:</strong> The correlation between total points and win shares may be influenced by
+                        various contextual factors, such as team strategy, playing time, role within the team, and quality of teammates.
+                        A player on a weaker team may have more scoring opportunities but fewer win shares compared to a player on a
+                        stronger team.
+                    </li>
+                    <li class="infographic">
+                        <strong>Style of Play:</strong> Scoring points is just one aspect of a player's contribution to the game. Other
+                        skills like defense, passing, rebounding, leadership, and intangibles also play a significant role in
+                        determining a player's overall value. Focusing solely on scoring may overlook these other important aspects.
+                    </li>
+                    <li class="infographic">
+                        <strong>Efficiency:</strong> The efficiency with which points are scored is crucial. A player who scores a high
+                        volume of points but does so with poor shooting percentages or at the expense of ball movement and team
+                        chemistry may not necessarily contribute positively to overall team success.
+                    </li>
+                    <li class="infographic">
+                        <strong>Role and Position:</strong> Different players have different roles and positions within a team. Scoring
+                        may be the primary responsibility of some players (e.g., shooting guards, scoring forwards) while others are
+                        expected to focus more on playmaking or defense. Comparing players solely based on their scoring output may
+                        overlook their overall contribution in their respective roles.
+                    </li>
+                </ol>
+                </div>
+            </div>
+
+            <h2 class="section">Are the best players those who can shoot threes well?</h2>
+
+            <div class="text">
+                <div id="p2"></div>
+                <div id="p2_plot" class="center_plot"></div>
+                <div class="text">
+
+                    <p>The observation that a three-point percentage of about 38-45% resulted in the most win shares suggests a strong
+                    correlation between shooting accuracy from beyond the arc and a player's overall impact on the team's success. Here's an
+                    explanation of what this finding could mean:</p>
+                    <ol>
+                    <li class="infographic">
+                        <strong>Efficiency and Scoring Impact:</strong> A high three-point percentage indicates that a player is making a
+                        significant number of their three-point attempts. This level of accuracy suggests that the player is efficient in
+                        their scoring, contributing valuable points to their team's offense. By consistently converting three-point shots,
+                        these players can create scoring advantages, stretch the defense, and provide valuable spacing for their teammates.
+                    </li>
+                    
+                    <li class="infographic">
+                        <strong>Spacing and Offensive Impact:</strong> Shooting at a high percentage from beyond the arc forces opposing
+                        defenses to pay close attention to the player, leading to increased defensive focus and potentially opening up
+                        opportunities for other players. This spacing can create driving lanes, attract double-teams, and generate open
+                        shots for teammates. Consequently, the player's ability to shoot at a high three-point percentage positively impacts
+                        their team's offensive performance, leading to increased scoring and, consequently, more win shares.
+                    </li>
+                    
+                    <li class="infographic">
+                        <strong>Strategic Importance:</strong> In today's basketball landscape, the three-point shot has gained
+                        significant strategic importance. Teams emphasize shooting efficiency and rely on three-pointers as a valuable
+                        scoring weapon. Players who excel in shooting from beyond the arc at a high percentage demonstrate their ability to
+                        adapt to this strategic emphasis and contribute effectively to their team's offensive game plan. Consequently, their
+                        contributions in terms of scoring efficiency translate into higher win shares.
+                    </li>
+                    
+                    <p class = 'infographic'>
+                        It's important to note that while the observation indicates a strong correlation, it doesn't imply a causal
+                        relationship. Other factors, such as defensive contributions, playmaking abilities, leadership, and overall team
+                        dynamics, also influence win shares. Nevertheless, the finding highlights the significance of shooting accuracy from
+                        beyond the arc and its impact on a player's individual and team success.
+                    </p>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section">Are the best teams offense or defense orientated?</h2>
+
+        <div>
+            <div id="p7"></div>
+            <div id="p7_plot" class="center_plot"></div>
+            <div class="text">
+                <ol>
+                <li class="infographic">
+                    <strong>Offensive Performance Dominance:</strong> 
+                    The chart clearly shows that higher-ranking teams tend to have higher Offensive Ratings (ORtg). This indicates that in
+                    today's NBA, teams that excel offensively have a higher likelihood of achieving better rankings. The focus on offense
+                    suggests that teams prioritize scoring efficiency, effective shooting, and offensive strategies to gain a competitive
+                    edge.
+                </li>
+
+                <li class="infographic">
+                    <strong>Scoring Leaders:</strong>
+                The top players in the league are often leading in scoring, indicating their offensive prowess. They consistently
+                demonstrate the ability to score at a high volume and efficiency, showcasing their importance in today's
+                offensive-oriented NBA.
+                </li>  
+                </ol>
+            </div>
+        </div>
+
+        <h2 class="section">What age do players reach their prime at?</h2>
+        <div>
+            <div id="p3"></div>
+            <div id="p3_plot" class="center_plot"></div>
+            <div class="text">
+                <h3>Explanation:</h3>
+                <ol>
+                    <li class="infographic">
+                        <strong>Consistency of Top Players::</strong>
+                    The constant maximum PRA from ages 19 to 34 highlights a group of players who consistently perform at a high level
+                    during their prime years. These players demonstrate exceptional offensive skills, scoring prowess, and overall impact on
+                    the game.
+                    </li>
+                
+                    <li class="infographic">
+                        <strong>Prime Years:</strong>
+                        The period from 19 to 34 is typically considered the prime of a player's career, where they showcase their offensive
+                        skill sets and contribute significantly to their team's success. This age range aligns with the peak performance years
+                        for many top players.
+                    </li>
+
+                    <li class="infographic">
+                        <strong>Age-related Decline:</strong>
+                    The decline in the maximum PRA beyond age 34 suggests that as players get older, their overall offensive production
+                    tends to decrease. This decline can be attributed to factors such as physical wear and tear, decreased athleticism, and
+                    the emergence of younger talent.
+                    </li>
+
+                    <li class="infographic">
+                        <strong>Individual Performance vs. Aggregate Data::</strong>
+                        It is important to recognize that while the average PRA by age provides a general trend, it may not accurately represent
+                        the performance of top players. The maximum PRA for each age group provides a more insightful perspective, indicating
+                        the exceptional performances of top players during their prime years and their subsequent decline as they age.
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+       
+        <h2 class="section">Where are the best players from?</h2>
+        <div>
+            <div id="p4"></div>
+            <div id="p4_plot" class="center_plot"></div>
+            <div class="button-container">
+        
+            </div>
+            <div class="text">
+                    <p>Geographically it seems as if the top players by points come from these states include California, Texas, Louisiana, Missisipi, Alabama, Florida, Georgia,
+                    Nort Carolina, Illinois, Michigan, Ohio, Pennslyvania, New York. These states have a rich history of producing talented basketball players, which is reflected in the dataset's top
+                    players. </p>
+                    
+                    <br>
+                    
+                    <p>The concentration of top players in these states suggests the presence of robust basketball programs, youth development
+                    systems, and a strong basketball tradition. These regions likely have a higher emphasis on basketball at the grassroots
+                    level, with dedicated coaches, training facilities, and competitive leagues that nurture talent and provide
+                    opportunities for player development.</p>
+
+                    <br>
+                    
+                    <p>Furthermore, these states often host renowned high school basketball programs, college basketball powerhouses, and NBA
+                    franchises. The presence of elite basketball institutions, both at the amateur and professional levels, contributes to
+                    the overall talent pool and further fosters a basketball-centric culture.</p>
+
+                    <br>
+                    
+                    <p>
+                        In summary, this visualization highlights the dominance of specific states in producing top basketball players based on
+                        total points. It suggests that these states have a strong basketball culture, characterized by a rich history, robust
+                        development systems, and a high level of participation and interest in the sport.</p>
+                
+            </div>
+        </div>
+
+        <h2 class="section">Are the best players similar?</h2>
+        <div>
+            <div id="p5"></div>
+            <div class = "text"> Force Graph of Similar Players</div>
+            <div id="p5_plot" class="center_plot"></div>
+            <div id="filter-buttons">
+                <button class="filter-button" data-position="PG">Point Guard</button>
+                <button class="filter-button" data-position="SG">Shooting Guard</button>
+                <button class="filter-button" data-position="SG">Small Forward</button>
+                <button class="filter-button" data-position="PF">Power Forward</button>
+                <button class="filter-button" data-position="C">Center</button>
+            </div>
+            <div class="text">
+                <h3>Explanation:</h3>
+                <ol>
+                    <p>
+                        The force graph helps us determine the top players by highlighting their statistical similarities within and across
+                        positions, providing insights into their play styles, and facilitating comparisons between players based on their
+                        performance attributes.
+                    </p>
+                    <li class="infographic">
+                        <strong>Identifying Top Players:</strong>
+                    By analyzing the force graph, we can identify the nodes (players) that have the highest number of strong connections
+                    (links) within their respective position groups. These players with the most connections within their positions can be
+                    considered the top players in their roles.
+                    </li>
+                
+                    <li class="infographic">
+                        <strong>Similarity among Top Players:</strong>
+                    The force graph demonstrates that the top players in each position share significant similarities in their statistical
+                    attributes. This suggests that certain performance metrics, such as points, rebounds, and assists, contribute to
+                    determining who the top players are. The similarity in performance across positions also highlights that exceptional
+                    performance transcends individual roles and positions.
+                    </li>
+                
+                    <li class="infographic">
+                        <strong>Perofrmance Patterns:</strong>
+                        The force graph can reveal performance patterns within position groups and across positions. For example, within a
+                        position group, we may observe that top players have similar statistical profiles, indicating common skill sets required
+                        for success in that position. Across positions, the graph can reveal commonalities in performance attributes that
+                        contribute to being a top player regardless of the specific position.
+                    </li>
+                
+                    <li class="infographic">
+                        <strong>Play Styles and Contributions:</strong>
+                        The force graph implies that top players are specialists in their positions, mastering their roles and making
+                        significant contributions to their teams' success. The statistical attributes represented in the graph can provide
+                        insights into the specific skills and play styles that make these players stand out.
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <h3 class="section">So what makes the Top players?</h3>
+        <p> 
+            In conclusion, top NBA players possess a unique combination of skills, including a well-rounded skill set, three-point
+            shooting accuracy, and offensive efficiency. When evaluating prospects, teams should prioritize players who excel mainly excel in
+            scoring but also posess traits of defense, playmaking, and leadership. LeBron James stands out as an exceptional player, showcasing his
+            exceptional abilities in all categoires including total points scored and three-point shooting accuracy. Though this data does not show the whole story,
+            we can generalize that the nba is moving towards a more offesensive orietnated playstyle where offensive power contributes much more to wins than 
+            defense. So when looking for the top players, it really depends on the roles and playstyles that they play but very notable attributes of the top players of each
+            position are offensive efficiency and three point percentage. This makes sense as todays game focuses much more on the 3 ball than in the past. When teams are looking
+            for potential prospects that should look for players that fill the roles that are missing who also come with a solid three point game and offensive skillset.
+        </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+.center_plot {
+    margin: 0 auto;
+        text-align: center;
+}
+
+.section {
+    text-align: center;
+}
+
+.plot {
+    margin-bottom: 20px;
+}
+
+.text {
+  flex: 0 0 50%;
+ margin-bottom: 20px;
+   };
+
+.container {
+    display: block;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.tooltip {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    /* Adjust the left position to position the tooltip next to the plot */
+    opacity: 0;
+    background-color: white;
+    border: solid;
+    border-width: 1px;
+    border-radius: 1px;
+    padding: 1px;
+    font-size: 10px;
+    /* Adjust the font size to make the tooltip smaller */
+}
+
+.infographic {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
